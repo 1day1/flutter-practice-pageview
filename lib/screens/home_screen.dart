@@ -44,8 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: pageController,
         children: [1, 2, 3, 4, 5, 6]
             .map(
-              (e) => Image.asset(
-                'assets/pageview$e.png',
+              (e) => Image.network(
+                //Image.asset(
+                'https://raw.githubusercontent.com/1day1/flutter-practice-pageview/main/assets/pageview$e.png',
                 fit: BoxFit.cover,
               ),
             )
